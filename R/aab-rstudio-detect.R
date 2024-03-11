@@ -193,7 +193,9 @@ rstudio <- local({
       "devtools::build",
       "devtools::test",
       "devtools::check",
-      "testthat::test_file"
+      "testthat::test_file",
+      "devtools::document",
+      "roxygen2::roxygenize"
     )
     any(vapply(calls, grepl, logical(1), cmd, useBytes = TRUE))
   }
